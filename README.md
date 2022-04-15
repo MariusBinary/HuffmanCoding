@@ -1,48 +1,35 @@
-# Getting Started with Create React App
+# Huffman Coding
+Hardware Wizard is a software that monitors temperature sensors and fans speed of a computer. In addition to this it is also able to provide a lot of useful information on your peripherals...all this with a modern and intuitive interface.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Get a general overview on your pc, with information that updates in real time.
+<img src="https://www.mariusbinary.altervista.org/github/huffman-coding/screen-1.png" />
 
-## Available Scripts
+## Monitors the temperature detected by the thermal sensors and the speed of the fans.
+<img src="https://www.mariusbinary.altervista.org/github/huffman-coding/screen-2.png" />
 
-In the project directory, you can run:
+## Get detailed information on all peripherals including: [motherboard, processor, graphic cards, memory banks, storage peripherals, monitors, etc ...]
+<img src="https://www.mariusbinary.altervista.org/github/huffman-coding/screen-3.png" />
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What peripherals are supported?
+Hardware Wizard can provide the following information on:
+- **Motherboard**: attached fans speed, temperature, specifications.
+- **Processor**: load (system, user), temperature, top processes that use more cpu, specifications.
+- **Memory**: usage (hardware reserved, in use, modified, standby, available), top processes that use more ram, specifications.
+- **Graphic Cards**: load, temperature, fans speed, memory usage, specifications.
+- **Monitors**: specifications.
+- **Storage Devices**: storage (used, available), partitions, temperature, specifications.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## The settings allows you to:
+- Change the temperature unit between: Celsius, Fahrenheit, Kelvin.
+- Change the sensors update interval.
+- Choose whether to detect changes to storage drives in real time (e.g. when a USB device is inserted/removed).
+- Change the application theme between light/dark.
+- Choose which page to open first when the application starts.
 
-### `npm test`
+## Dependencies
+Hardware Wizard depends on the **OpenHardwareMonitor (v0.9.5)** library (https://openhardwaremonitor.org/) which is used exclusively to retrieve temperature sensors data and fans speed in real time. All the other information (eg. peripherals details, cpu load, ram usage, main processes, storage partitions, ecc...) is obtained directly from the operating system without the use of any external liberaries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## For help or questions about the program:
+Contact me at: mcelcovan@gmail.com
