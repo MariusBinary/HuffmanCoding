@@ -1,35 +1,16 @@
 # Huffman Coding
-Hardware Wizard is a software that monitors temperature sensors and fans speed of a computer. In addition to this it is also able to provide a lot of useful information on your peripherals...all this with a modern and intuitive interface.
+Huffman Coding is a tool allows you to encode text using huffman encoding.
 
-## Get a general overview on your pc, with information that updates in real time.
+## Write a sentence or upload a file from your pc to be encoded.
 <img src="https://www.mariusbinary.altervista.org/github/huffman-coding/screen-1.png" />
 
-## Monitors the temperature detected by the thermal sensors and the speed of the fans.
+## Get the result with a tree interface.
 <img src="https://www.mariusbinary.altervista.org/github/huffman-coding/screen-2.png" />
 
-## Get detailed information on all peripherals including: [motherboard, processor, graphic cards, memory banks, storage peripherals, monitors, etc ...]
+## Interact with the tree interface
 <img src="https://www.mariusbinary.altervista.org/github/huffman-coding/screen-3.png" />
 
 ---
-
-## What peripherals are supported?
-Hardware Wizard can provide the following information on:
-- **Motherboard**: attached fans speed, temperature, specifications.
-- **Processor**: load (system, user), temperature, top processes that use more cpu, specifications.
-- **Memory**: usage (hardware reserved, in use, modified, standby, available), top processes that use more ram, specifications.
-- **Graphic Cards**: load, temperature, fans speed, memory usage, specifications.
-- **Monitors**: specifications.
-- **Storage Devices**: storage (used, available), partitions, temperature, specifications.
-
-## The settings allows you to:
-- Change the temperature unit between: Celsius, Fahrenheit, Kelvin.
-- Change the sensors update interval.
-- Choose whether to detect changes to storage drives in real time (e.g. when a USB device is inserted/removed).
-- Change the application theme between light/dark.
-- Choose which page to open first when the application starts.
-
-## Dependencies
-Hardware Wizard depends on the **OpenHardwareMonitor (v0.9.5)** library (https://openhardwaremonitor.org/) which is used exclusively to retrieve temperature sensors data and fans speed in real time. All the other information (eg. peripherals details, cpu load, ram usage, main processes, storage partitions, ecc...) is obtained directly from the operating system without the use of any external liberaries.
 
 ## For help or questions about the program:
 Contact me at: mcelcovan@gmail.com
