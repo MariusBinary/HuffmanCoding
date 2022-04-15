@@ -1,0 +1,47 @@
+.navigation-bar {
+    margin: 1rem 0;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 0px 1px;
+    background: var(--body-secondary-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 2px solid var(--body-primary-color);
+}
+
+.navigation-bar ul {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin:0;
+    flex-wrap: wrap;
+}
+
+@media (max-width:567px) {
+    .navigation-bar ul {
+        flex-direction: column;
+    }
+}
+
+.navigation-bar ul li {
+    flex: 1;
+    border-radius: 1rem;
+    text-align: center;
+    transition: background-color 0.25s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--text-color);
+}
+
+.navigation-bar ul li.active {
+    background: var(--body-primary-color);
+}
+
+.navigation-bar ul li p {
+    margin-left: 0.5rem;
+}
+
+.navigation-bar ul li svg {
+    fill: inherit;
+}

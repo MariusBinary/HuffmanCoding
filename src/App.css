@@ -1,0 +1,183 @@
+/*Colori per la modalità chiara*/
+
+:root, [data-theme="default"] {
+  /* Colori generali */
+  --body-main-color: #ffffff;
+  --body-primary-color: #ffffff;
+  --body-secondary-color: #eff2f5;
+  /* Colori del diagramma */
+  --diagram-symbol-color: #0000ff;
+  --diagram-label-path-color: #808080;
+  --diagram-label-prob-color: #0000ff;
+  --diagram-label-disabled-color: #808080;
+  --diagram-node-color: #000000;
+  --diagram-node-disabled-color: #808080;
+  --diagram-active-color: #ff0000;
+  --diagram-text-color: #ffffff;
+  /* Colori della tabella*/
+  --table-row-hover-color: #d3d3d3a2;
+  /* Colori del testo */
+  --text-color: black;
+}
+
+/*Colori per la modalità scura*/
+
+[data-theme="dark"] {
+  /* Colori generali */
+  --body-main-color: black;
+  --body-primary-color: #2b2b2b;
+  --body-secondary-color: #0d0d0d;
+  /* Colori del diagramma */
+  --diagram-symbol-color: #2b2b2b;
+  --diagram-label-path-color: #2b2b2b;
+  --diagram-label-prob-color: #2b2b2b;
+  --diagram-label-disabled-color: #808080;
+  --diagram-node-color: #ffffff;
+  --diagram-node-disabled-color: #808080;
+  --diagram-active-color: #ff0000;
+  --diagram-text-color: #ffffff;
+  /* Colori della tabella*/
+  --table-row-hover-color: #ffffff4d;
+  /* Colori del testo */
+  --text-color: white;
+}
+
+
+/*Stile della barra di scorrimento*/
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+/*Stile generale*/
+
+*:not(path, span) {
+  box-sizing: border-box;
+  transition: background-color 0.25s, color 0.25s, border 0.25s, fill 0.25s, stroke 0.25s;
+}
+
+html, body, #root {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.app {
+  background: var(--body-main-color);
+  padding: 1rem 1rem 2rem 1rem;
+  min-height: 100%;
+}
+
+h1, p, label {
+  color: var(--text-color);
+}
+
+/*Stile dei pulsanti*/
+
+button {
+  display: block;
+  background: linear-gradient(-180deg, #ffdc73, #febf01);
+  border: 3px solid #dca602;
+  border-radius: 10px;
+  padding: 10px 5px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  text-shadow: 1px 1px rgb(255 255 255 / 70%);
+  font-weight: bold;
+  text-align: center;
+  font-size: 10pt;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+button:hover {
+  border-color: #febf01;
+}
+
+button:active {
+  background: #febf01;
+}
+
+/*Stile dell'intestazione*/
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 0;
+  width: 100%;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 16%);
+  background: var(--body-secondary-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid var(--body-primary-color);
+  padding: 0 8px;
+}
+
+.app-header .header-main {
+  display: flex;
+  align-items: center;
+}
+
+.app-header .header-author {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.app-header .header-author a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--text-color);
+  margin: 0 0.2rem;
+}
+
+.app-header .header-title {
+  margin-bottom: 0.5rem;
+}
+
+.app-header .theme-btn {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  margin-right: 2rem;
+  margin-left: 15px;
+  background: var(--body-primary-color);
+  border: 1px solid var(--body-primary-color);
+  border-radius: 100%;
+  box-shadow: rgb(0 0 0 / 16%) 0px 0px 0px 1px;
+  fill: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header .theme-btn svg {
+  fill: inherit;
+}
+
+.app-header .logo {
+  fill: var(--text-color);
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  flex-basis: 100px;
+  min-width: 100px;
+}
